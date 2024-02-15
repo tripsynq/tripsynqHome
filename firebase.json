@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "triparific",
     "public": "public",
     "ignore": [
       "firebase.json",
