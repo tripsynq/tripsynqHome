@@ -1160,7 +1160,7 @@ h1.intro-header::before {
   border: none;
   width: 97px;
   height: 22px;
-  background: url("../images/logo.png") no-repeat center;
+  background: url("../images/triparific-logo.png") no-repeat center;
   background-size: 97px 22px;
   font: 0/0 a;
   text-shadow: none;
@@ -2617,7 +2617,7 @@ footer ul a:visited {
   border: none;
   width: 93px;
   height: 21px;
-  background: url("../images/logo.png") no-repeat center;
+  background: url("../images/triparific-logo.png") no-repeat center;
   background-size: 93px 21px;
   font: 0/0 a;
   text-shadow: none;
