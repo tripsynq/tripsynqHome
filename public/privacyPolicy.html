@@ -2,60 +2,95 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Privacy Policy - Triparific</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-        }
-        h1, h2 {
-            color: #333;
-        }
-        p, li {
-            font-size: 16px;
-            color: #666;
-            line-height: 1.6;
+        body, h1, h2, p, ul, li { /* Targets the body and text elements */
+            color: white; /* Sets text color to white */
         }
     </style>
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
-<body>
-    <h1>Privacy Policy for Triparific</h1>
-    <p>Last updated: 12th April 2024 </p>
-    <p>At Triparific, we are committed to protecting your privacy and ensuring you have a positive experience on our app. This Privacy Policy outlines our practices regarding the collection, use, and disclosure of your information when you use the Triparific app and tells you about your privacy rights and how the law protects you.</p>
-    
-    <h2>Collection and Use of Your Information</h2>
-    <p>To provide and improve our services, we may collect information that is not linked to your identity, including but not limited to:</p>
-    <ul>
-        <li><strong>Location Data:</strong> We collect location data to offer personalized travel suggestions and services. This data helps us understand where you travel and how you use our app to enhance your experience.</li>
-        <li><strong>Photos:</strong> If you choose to upload photos to document your travels, we store these photos to enrich your travel diary and memories. These photos are not linked to your identity unless you choose to include identifiable information within them.</li>
-    </ul>
-    
-    <h2>Use of Your Information</h2>
-    <p>The information we collect has various uses, such as:</p>
-    <ul>
-        <li>To provide and maintain our service, including to monitor the usage of our service.</li>
-        <li>To manage your account: to manage your registration as a user of the app.</li>
-        <li>To perform a contract: to develop, comply with, and undertake the purchase contract for the products, items, or services you have purchased or of any other contract with us through the app.</li>
-        <li>To contact you: To contact you by email, telephone calls, SMS, or other equivalent forms of electronic communication.</li>
-        <li>To provide you with news, special offers, and general information about other goods, services, and events which we offer.</li>
-    </ul>
+<body id="top">
+    <!-- header -->
+    <header id="header" class="row">   
+        <div class="header-logo">
+            <a href="index.html">Triparific</a>
+        </div>
+        <!-- Commented out navigation for brevity -->
+    </header>
 
-    <h2>Storage of Your Information</h2>
-    <p>Triparific securely stores your data on cloud servers. We employ a variety of security measures to ensure that your information is protected against unauthorized access, alteration, disclosure, or destruction.</p>
-    
-    <h2>Disclosure of Your Information</h2>
-    <p>We do not sell, trade, or otherwise transfer to outside parties your personally identifiable information. This does not include trusted third parties who assist us in operating our app, conducting our business, or servicing you, so long as those parties agree to keep this information confidential.</p>
-    
-    <h2>Your Data Protection Rights</h2>
-    <p>Triparific aims to take reasonable steps to allow you to correct, amend, delete, or limit the use of your Personal Data. If you wish to be informed about what Personal Data we hold about you and if you want it to be removed from our systems, please contact us.</p>
-    
-    <h2>Changes to This Privacy Policy</h2>
-    <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes.</p>
-    
-    <h2>Contact Us</h2>
-    <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at [Contact Information].</p>
-    
-    <p>By using our app, you consent to this Privacy Policy and agree to its terms.</p>
+    <!-- Privacy Policy Content -->
+    <section>
+        <div class="row">
+            <div class="col-twelve">
+                <h1>Privacy Policy for Triparific</h1>
+                <p>Last updated: 12th April 2024</p>
+                <p>At Triparific, we are committed to protecting your privacy and ensuring you have a positive experience on our app. This Privacy Policy outlines our practices regarding the collection, use, and disclosure of your information when you use the Triparific app and tells you about your privacy rights and how the law protects you.</p>
+                
+                <h2>Collection and Use of Your Information</h2>
+                <p>To provide and improve our services, we may collect information that is not linked to your identity, including but not limited to:</p>
+                <ul>
+                    <li><strong>Location Data:</strong> We collect location data to offer personalized travel suggestions and services. This data helps us understand where you travel and how you use our app to enhance your experience.</li>
+                    <li><strong>Photos:</strong> If you choose to upload photos to document your travels, we store these photos to enrich your travel diary and memories. These photos are not linked to your identity unless you choose to include identifiable information within them.</li>
+                </ul>
+                
+                <h2>Use of Your Information</h2>
+                <p>The information we collect has various uses, such as:</p>
+                <ul>
+                    <li>To provide and maintain our service, including to monitor the usage of our service.</li>
+                    <li>To manage your account: to manage your registration as a user of the app.</li>
+                    <li>To perform a contract: to develop, comply with, and undertake the purchase contract for the products, items, or services you have purchased or of any other contract with us through the app.</li>
+                    <li>To contact you: To contact you by email, telephone calls, SMS, or other equivalent forms of electronic communication.</li>
+                    <li>To provide you with news, special offers, and general information about other goods, services, and events which we offer.</li>
+                </ul>
+                
+                <h2>Storage of Your Information</h2>
+                <p>Triparific securely stores your data on cloud servers. We employ a variety of security measures to ensure that your information is protected against unauthorized access, alteration, disclosure, or destruction.</p>
+                
+                <h2>Disclosure of Your Information</h2>
+                <p>We do not sell, trade, or otherwise transfer to outside parties your personally identifiable information. This does not include trusted third parties who assist us in operating our app, conducting our business, or servicing you, so long as those parties agree to keep this information confidential.</p>
+                
+                <h2>Your Data Protection Rights</h2>
+                <p>Triparific aims to take reasonable steps to allow you to correct, amend, delete, or limit the use of your Personal Data. If you wish to be informed about what Personal Data we hold about you and if you want it to be removed from our systems, please contact us.</p>
+                
+                <h2>Changes to This Privacy Policy</h2>
+                <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes.</p>
+                
+                <h2>Contact Us</h2>
+                <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at [Contact Information].</p>
+                
+                <p>By using our app, you consent to this Privacy Policy and agree to its terms.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="row">
+            <div class="col-full">
+                <div class="footer-logo">
+                    <a href="index.html">Triparific</a>
+                </div>
+        <!--         <ul class="footer-social">
+                    <li><a href="#"><i class="icon-facebook"></i></a></li>
+                    <li><a href="#"><i class="icon-twitter"></i></a></li>
+                    <li><a href="#"><i class="icon-instagram"></i></a></li>
+                    <li><a href="#"><i class="icon-youtube"></i></a></li>
+                </ul> -->
+            </div>
+        </div>
+    </footer>
+
+    <!-- Java Script -->
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
