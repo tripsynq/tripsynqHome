@@ -1,0 +1,23 @@
+name: Deploy to Firebase Hosting
+
+on:
+  push:
+    branches:
+      - main  # Deploys only when merged to main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Install Firebase CLI
+      run: npm install -g firebase-tools
+
+    - name: Authenticate with Firebase
+      run: echo "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}" | base64 --decode > $HOME/service-account.json
+
+    - name: Deploy to Firebase Hosting
+      run: firebase deploy --token "${{ secrets.FIREBASE_TOKEN }}" --only hosting
